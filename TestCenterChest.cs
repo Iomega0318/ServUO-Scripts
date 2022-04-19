@@ -223,15 +223,13 @@ namespace Server.Items
             runebook.CurCharges = runebook.MaxCharges;
             PlaceItemIn(cont, 145, 105, runebook);
 
-            Item toHue = new BagOfAllReagents(150);
+            Item toHue = new BagOfAllReagents(5000);
             toHue.Hue = 0x2D;
             PlaceItemIn(cont, 45, 150, toHue);
 
-            toHue = new BagOfNecroReagents(150);
+            toHue = new BagOfNecroReagents(5000);
             toHue.Hue = 0x488;
             PlaceItemIn(cont, 65, 150, toHue);
-
-            PlaceItemIn(cont, 140, 150, new BagOfAllReagents(500));
 
             for (int i = 0; i < 9; ++i)
                 PlaceItemIn(cont, 45 + (i * 10), 75, new RecallRune());
